@@ -49,10 +49,9 @@ cd rknnfilter
 
 ```bash
 export GST_PLUGIN_PATH="$(pwd)/build/src:$GST_PLUGIN_PATH"
-./run_test.sh
+
 ```
 
-若 `model/` 下没有 `yolov5.rknn` 或 `yolov5s-640-640.rknn`，先放入一个 YOLOv5 的 RKNN 模型，再执行 `./run_test.sh`。
 
 ---
 
@@ -113,8 +112,7 @@ sudo ninja -C build install
 ### 五、运行测试
 
 ```bash
-# 单模型测试（YOLOv5）
-./run_test.sh
+
 
 # 批量测试 model/ 下所有模型（快速模式：每模型 30 帧）
 ./run_batch_test.sh
