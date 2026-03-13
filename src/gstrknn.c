@@ -271,7 +271,7 @@ gst_plugin_rknn_class_init(GstPluginRknnClass* klass)
         "RKNN Vision Filter",
         "Filter/Video",
         "RKNN NPU inference for object detection, classification and more",
-        "haydenee <lth0320@163.com>");
+        "PT233 <yuqih6292@gmail.com>");
 
     gst_element_class_add_pad_template(gstelement_class,
         gst_static_pad_template_get(&src_factory));
@@ -667,7 +667,6 @@ gboolean prepare_dmabuf_memory(GstPluginRknn* filter, int index, gsize mem_size,
 }
 static gpointer rknn_task_func(gpointer data)
 {
-    int ret = GST_FLOW_OK;
     RknnTaskData* task_data = (RknnTaskData*)data;
     GstPluginRknn* filter = task_data->filter;
     GST_INFO_OBJECT(filter, "Starting rknn task thread");
