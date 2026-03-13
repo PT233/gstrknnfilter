@@ -17,7 +17,7 @@
 | 平台 | RK3588 / RK3576 / RK3568 等（arm64） |
 | 系统 | 板端 Linux（非交叉编译时） |
 | 工具 | meson、ninja、pkg-config |
-| 运行时 | GStreamer 1.18+、librga、librknnrt |
+| runtime | GStreamer 1.18+、librga、librknnrt |
 
 ### 2. 安装依赖
 
@@ -68,7 +68,7 @@ export GST_PLUGIN_PATH="$(pwd)/build/src:$GST_PLUGIN_PATH"
 | ninja | 编译器 |
 | gstreamer-1.0 | GStreamer 核心 |
 | librga | Rockchip RGA 加速 |
-| librknnrt | RKNN 运行时 |
+| librknnrt | RKNN runtime |
 
 若板端为 Rockchip 官方系统，`librga` 与 `librknnrt` 通常已预装；否则需从以下地址获取预编译库：
 
